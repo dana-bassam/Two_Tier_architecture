@@ -45,7 +45,7 @@ namespace Two_Tier_architecture
 
                 sda.SelectCommand.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("data entered succesfully. . . .");
+                MessageBox.Show("data entered succesfully");
                 panel1.Enabled = false;
 
             }
@@ -73,7 +73,7 @@ namespace Two_Tier_architecture
 
                     sda.SelectCommand.ExecuteNonQuery();
                     conn.Close();
-                    MessageBox.Show("data updated succesfully. . . .");
+                    MessageBox.Show("data updated succesfully");
                     load_data();
                     panel1.Enabled = false;
                 }
@@ -101,7 +101,7 @@ namespace Two_Tier_architecture
 
                     sda.SelectCommand.ExecuteNonQuery();
                     conn.Close();
-                    MessageBox.Show("data deleted succesfully. . . .");
+                    MessageBox.Show("data deleted succesfully");
                     load_data();
                     panel1.Enabled = false;
                 }
@@ -153,6 +153,11 @@ namespace Two_Tier_architecture
             txtage.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             txttax.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             comboBox1.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
